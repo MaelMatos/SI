@@ -18,7 +18,17 @@ function MostrarQuantidadeNumerosPares($nMin,$nMax){
     }
     return $quantidadeNPares;
 }
-
-echo MostrarQuantidadeNumerosPares(1,20);
+$op = $_GET['operation'];
+$x = $_GET['x'];
+$y = $_GET['y'];
+if($op == 'par'){
+    echo "Existem ".MostrarQuantidadeNumerosPares($x,$y)." numeros entre $x e $y";
+}
+if($op == 'todos'){
+    echo "Os numeros entre $x e $y sao: ".MostrarNumeros($x,$y);
+}
+else{
+    echo "Operacao invalida";
+}
 
 ?>
