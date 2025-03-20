@@ -1,9 +1,9 @@
 <?php
 // objetivo: mostrar numeros de 1 a 20
 function MostrarNumeros($nMin,$nMax){
+    $allN = [];
     while($nMin<$nMax){
-        $allN = [];
-        $allN = $allN+$nMin;
+        $allN = $allN + $nMin;
         $nMin++;
     }
     return $allN;
