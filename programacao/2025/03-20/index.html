@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            font-size: 1.02em
+        };
+        .form {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            /* bring your own prefixes */
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <form action="03-20.php" method="get">
-        <label>tipo de operação</label>
-        <select name="operation">
-            <option value="todos">Mostrar tosdos os numeros entre X e Y</option>
-            <option value="par">Mostrar a quantidade de numeros pares entre X e Y</option>
-        </select>
-        <label>Valor de X</label>
-        <input type="number" name="x" required placeholder="0">
-        <label>Valor de Y</label>
-        <input type="number" name="y" required placeholder="0">
-    </form>
+    <div class="form">
+
+        <form action="03-20.php" method="get">
+            <label>tipo de operação</label>
+            <select name="operation">
+                <option value="todos">Mostrar tosdos os numeros entre X e Y</option>
+                <option value="par">Mostrar a quantidade de numeros pares entre X e Y</option>
+            </select><br>
+            <label>Valor de X</label>
+            <input type="number" name="x" required placeholder="0"><br>
+            <label>Valor de Y</label>
+            <input type="number" name="y" required placeholder="0"><br>
+            <input type="submit" value="calcular">
+        </form>
+    </div>
     
 </body>
 </html>
