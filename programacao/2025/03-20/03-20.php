@@ -3,8 +3,8 @@
 function MostrarNumeros($nMin,$nMax){
     $allN = [];
     while($nMin<$nMax){
-        $allN[] = $nMin;
         $nMin++;
+        $allN[] = $nMin;
     }
     return $allN;
 }
