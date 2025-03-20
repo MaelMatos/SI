@@ -29,7 +29,7 @@ $op = $_GET['operation'];
 $x = $_GET['x'];
 $y = $_GET['y'];
 if($op == 'par'){
-    echo "Existem ".count(MostrarQuantidadeNumerosPares($x,$y))." numeros pares entre $x e $y, são eles:".implode(",",MostrarQuantidadeNumerosPares($x,$y));
+    echo "Existem ".count(MostrarQuantidadeNumerosPares($x,$y))." numeros pares entre $x e $y, são eles: ".implode(",",MostrarQuantidadeNumerosPares($x,$y));
 }
 if($op == 'todos'){
     echo "Os numeros entre $x e $y são: ".implode(",",MostrarNumeros($x,$y));
