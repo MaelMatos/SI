@@ -32,7 +32,7 @@ function strXOR($str1, $str2){
     //retorna texto binário
     // ambos devem ter mesmo tamanho(1Byte)
     $strXOR = [];
-    for ($i=0; $i < 7; $i++) {
+    for ($i=0; $i < strlen($str1); $i++) {
         if($str1[$i] == $str2[$i]){
             $strXOR[$i] = '0';
         }else{
